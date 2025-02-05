@@ -12,7 +12,7 @@ const app = express();
 
 // db configuration
 try {
-    const defaultUri = 'mongodb://localhost:27017/magic-movies';
+    const defaultUri = 'mongodb://localhost:27017/magic-movies-pt2';
     await mongoose.connect(process.env.DATABASE_URI ?? defaultUri);
 
     console.log('DB Connected Successfuly!');
